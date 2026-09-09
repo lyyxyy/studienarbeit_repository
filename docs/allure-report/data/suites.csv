@@ -1,0 +1,18 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"附带 Markdown 版《算法精度评测报告》原文。","2","完整评测报告 (Markdown) 附件","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"按部署推理阈值 conf=0.25 与 GT 做 IoU>=0.5 同类匹配: 未匹配的 GT 记为漏检(FN), 未匹配的预测记为误检(FP)。
+数据来源: 整体评测保存的逐图预测 (save_txt)。","32","错误案例: 374/641 张存在漏检/误检 (58.3%)","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"内嵌《算法精度评测报告》第 5 节: 结论与建议。","1","结论与建议 (Markdown 报告第 5 节)","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"模型 YOLO11m (best.pt), 数据集 Carla_Labeling v5 (train 4485 / valid 1274 / test 641)。
+评测参数: imgsz=640, conf=0.001, iou=0.6, max_det=300 (COCO 风格)。","13","整体性能: mAP@0.5=0.7732 | mAP@0.5:0.95=0.5156 | P=0.8608 | R=0.6873","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"场景分组评测: 正午/晴天, 共 86 张。括号内为相对整体测试集的变化 (百分点)。
+注: 三个分组在城镇/相机构成上不完全均衡, 场景差异可能部分来自内容分布。","2","正午/晴天 (n=86): mAP@0.5=0.7248 (-4.8pp) | mAP@0.5:0.95=0.4592 (-5.6pp) | P=0.8693 | R=0.6254","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"场景分组评测: 早晨/雨天, 共 230 张。括号内为相对整体测试集的变化 (百分点)。
+注: 三个分组在城镇/相机构成上不完全均衡, 场景差异可能部分来自内容分布。","2","早晨/雨天 (n=230): mAP@0.5=0.7867 (+1.3pp) | mAP@0.5:0.95=0.5634 (+4.8pp) | P=0.9124 | R=0.7028","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"类别 Pedestrian 的逐类指标, 验收阈值 mAP@0.5 >= 0.75","1","Pedestrian: P=0.7645 | R=0.7410 | F1=0.7525 | mAP@0.5=0.7867 (阈值 0.75) | mAP@0.5:0.95=0.4747","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"测试集 GT 框尺度分布 — 解释小目标类指标偏低的根因。","1","GT 尺度: 交通灯中位约 5 x 5 px, 83.3% 为极小目标","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"类别 traffic_light 的逐类指标, 验收阈值 mAP@0.5 >= 0.55","2","traffic_light: P=0.8763 | R=0.4705 | F1=0.6123 | mAP@0.5=0.6174 (阈值 0.55) | mAP@0.5:0.95=0.3699","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"类别 Vehicle 的逐类指标, 验收阈值 mAP@0.5 >= 0.90","2","Vehicle: P=0.9315 | R=0.8918 | F1=0.9112 | mAP@0.5=0.9426 (阈值 0.90) | mAP@0.5:0.95=0.7769","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"场景分组评测: 夜间, 共 325 张。括号内为相对整体测试集的变化 (百分点)。
+注: 三个分组在城镇/相机构成上不完全均衡, 场景差异可能部分来自内容分布。","2","夜间 (n=325): mAP@0.5=0.7687 (-0.4pp) | mAP@0.5:0.95=0.4916 (-2.4pp) | P=0.8242 | R=0.7023","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""
+"类别 Traffic_Signs 的逐类指标, 验收阈值 mAP@0.5 >= 0.70","1","Traffic_Signs: P=0.8710 | R=0.6460 | F1=0.7419 | mAP@0.5=0.7463 (阈值 0.70) | mAP@0.5:0.95=0.4411","allure_report","2026-09-09","passed","2026-09-09","","test_algorithm_evaluation","",""

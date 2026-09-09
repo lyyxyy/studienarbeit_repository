@@ -238,7 +238,7 @@ def main():
 
 ### 4.2 归一化混淆矩阵 (ultralytics val 输出, conf=0.001)
 
-![归一化混淆矩阵](runs/test_full/confusion_matrix_normalized.png)
+![归一化混淆矩阵](figures/confusion_matrix_normalized.png)
 
 要点: ① Vehicle 对角线值最高, 检测最稳定; ② traffic_light 向 background 的漏检块最大
 (与该类仅 0.47 的 Recall 一致); ③ traffic_light 与 Traffic_Signs 之间存在双向混淆

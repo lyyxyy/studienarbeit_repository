@@ -1,0 +1,1513 @@
+{
+  "conf": 0.25,
+  "iou": 0.5,
+  "fn_per_class": {
+    "Pedestrian": 97,
+    "Traffic_Signs": 86,
+    "Vehicle": 154,
+    "traffic_light": 956
+  },
+  "fp_per_class": {
+    "Pedestrian": 62,
+    "Traffic_Signs": 17,
+    "Vehicle": 64,
+    "traffic_light": 94
+  },
+  "confusion": [
+    {
+      "pred": "traffic_light",
+      "gt": "traffic_light",
+      "count": 64
+    },
+    {
+      "pred": "Pedestrian",
+      "gt": null,
+      "count": 40
+    },
+    {
+      "pred": "Vehicle",
+      "gt": "Vehicle",
+      "count": 31
+    },
+    {
+      "pred": "Vehicle",
+      "gt": null,
+      "count": 31
+    },
+    {
+      "pred": "traffic_light",
+      "gt": null,
+      "count": 30
+    },
+    {
+      "pred": "Pedestrian",
+      "gt": "Pedestrian",
+      "count": 21
+    },
+    {
+      "pred": "Traffic_Signs",
+      "gt": null,
+      "count": 11
+    },
+    {
+      "pred": "Traffic_Signs",
+      "gt": "Traffic_Signs",
+      "count": 6
+    },
+    {
+      "pred": "Vehicle",
+      "gt": "Pedestrian",
+      "count": 2
+    },
+    {
+      "pred": "Pedestrian",
+      "gt": "traffic_light",
+      "count": 1
+    }
+  ],
+  "n_images_with_error": 374,
+  "n_test_images": 641,
+  "top_fn_cases": [
+    {
+      "file": "4942_town_05_part_00_morning_front_narrow_jpg.rf.bfbb2b597db4261bc0792464ca527c44.jpg",
+      "town": "05",
+      "tod": "morning",
+      "n_gt": 32,
+      "n_fn": 20,
+      "n_fp": 1,
+      "fn_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 0.339,
+          "area_rel": 0.0001,
+          "confused_with": "Traffic_Signs",
+          "confused_iou": 0.497
+        }
+      ],
+      "title": "FN x20 | town05 morning"
+    },
+    {
+      "file": "4977_town_05_part_00_morning_front_narrow_jpg.rf.be7d2ab43fb6a5d5195d3769782727c9.jpg",
+      "town": "05",
+      "tod": "morning",
+      "n_gt": 33,
+      "n_fn": 18,
+      "n_fp": 0,
+      "fn_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [],
+      "title": "FN x18 | town05 morning"
+    },
+    {
+      "file": "4994_town_05_part_00_morning_front_narrow_jpg.rf.2e4a439eec74af0f2d39eacf2c64bd47.jpg",
+      "town": "05",
+      "tod": "morning",
+      "n_gt": 33,
+      "n_fn": 18,
+      "n_fp": 0,
+      "fn_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [],
+      "title": "FN x18 | town05 morning"
+    },
+    {
+      "file": "2996_town_05_part_00_night_front_narrow_jpg.rf.91358b35512364bc5c112a167d67c1e6.jpg",
+      "town": "05",
+      "tod": "night",
+      "n_gt": 22,
+      "n_fn": 17,
+      "n_fp": 5,
+      "fn_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0018
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 0.764,
+          "area_rel": 0.0007,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.354
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.764,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.342
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.743,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.366
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.727,
+          "area_rel": 0.0007,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.309
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.311,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.383
+        }
+      ],
+      "title": "FP x5 | town05 night"
+    },
+    {
+      "file": "1352_town_06_part_00_midday_front_narrow_jpg.rf.e53c007026122bb11f67a4c4bf970d17.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 35,
+      "n_fn": 16,
+      "n_fp": 11,
+      "fn_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 0.586,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.428
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.552,
+          "area_rel": 0.0008,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.44
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.542,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.357
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.524,
+          "area_rel": 0.0001,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.457
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.484,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.451,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.294,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.276,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.272,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.271,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.352
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.265,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        }
+      ],
+      "title": "FP x11 | town06 midday"
+    },
+    {
+      "file": "3027_town_05_part_00_night_left_forward_jpg.rf.65da6d79b61ed0c386591228a53a3475.jpg",
+      "town": "05",
+      "tod": "night",
+      "n_gt": 18,
+      "n_fn": 14,
+      "n_fp": 4,
+      "fn_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0011
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Vehicle",
+          "conf": 0.835,
+          "area_rel": 0.0027,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.379
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.658,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.476
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.46,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.437,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.318
+        }
+      ],
+      "title": "FN x14 | town05 night"
+    }
+  ],
+  "top_fp_cases": [
+    {
+      "file": "1326_town_06_part_00_midday_front_narrow_jpg.rf.4462c970cc1031bade7b483b50d91316.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 32,
+      "n_fn": 10,
+      "n_fp": 11,
+      "fn_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0004
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 0.53,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.237
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.454,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.373
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.418,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.492
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.417,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.408,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.472
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.394,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.345,
+          "area_rel": 0.0,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.421
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.34,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.314,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.373
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.304,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.257
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.288,
+          "area_rel": 0.0003,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.143
+        }
+      ],
+      "title": "FP x11 | town06 midday"
+    },
+    {
+      "file": "1352_town_06_part_00_midday_front_narrow_jpg.rf.e53c007026122bb11f67a4c4bf970d17.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 35,
+      "n_fn": 16,
+      "n_fp": 11,
+      "fn_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 0.586,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.428
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.552,
+          "area_rel": 0.0008,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.44
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.542,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.357
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.524,
+          "area_rel": 0.0001,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.457
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.484,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.451,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.294,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.276,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.272,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.271,
+          "area_rel": 0.0002,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.352
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.265,
+          "area_rel": 0.0002,
+          "confused_with": null,
+          "confused_iou": null
+        }
+      ],
+      "title": "FP x11 | town06 midday"
+    },
+    {
+      "file": "2996_town_05_part_00_night_front_narrow_jpg.rf.91358b35512364bc5c112a167d67c1e6.jpg",
+      "town": "05",
+      "tod": "night",
+      "n_gt": 22,
+      "n_fn": 17,
+      "n_fp": 5,
+      "fn_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0018
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "traffic_light",
+          "conf": 0.764,
+          "area_rel": 0.0007,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.354
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.764,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.342
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.743,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.366
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.727,
+          "area_rel": 0.0007,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.309
+        },
+        {
+          "class": "traffic_light",
+          "conf": 0.311,
+          "area_rel": 0.0001,
+          "confused_with": "traffic_light",
+          "confused_iou": 0.383
+        }
+      ],
+      "title": "FP x5 | town05 night"
+    },
+    {
+      "file": "1151_town_06_part_00_midday_right_forward_jpg.rf.8d2754be5b03ed40fd266d93fbdbdd4d.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 13,
+      "n_fn": 6,
+      "n_fp": 4,
+      "fn_detail": [
+        {
+          "class": "Traffic_Signs",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 0.727,
+          "area_rel": 0.0019,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.138
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.573,
+          "area_rel": 0.0013,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.153
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.517,
+          "area_rel": 0.0012,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.123
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.306,
+          "area_rel": 0.0006,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.342
+        }
+      ],
+      "title": "FP x4 | town06 midday"
+    },
+    {
+      "file": "1221_town_06_part_00_midday_front_wide_jpg.rf.d373e43157599038f7ae31868d76eadb.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 27,
+      "n_fn": 13,
+      "n_fp": 4,
+      "fn_detail": [
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0003
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 1.0,
+          "area_rel": 0.0002
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Vehicle",
+          "conf": 0.515,
+          "area_rel": 0.0003,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.366
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.421,
+          "area_rel": 0.0003,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.49
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.31,
+          "area_rel": 0.0004,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.315
+        },
+        {
+          "class": "Pedestrian",
+          "conf": 0.26,
+          "area_rel": 0.0001,
+          "confused_with": "Pedestrian",
+          "confused_iou": 0.115
+        }
+      ],
+      "title": "FP x4 | town06 midday"
+    },
+    {
+      "file": "1401_town_06_part_00_midday_left_forward_jpg.rf.f3b2681a02df4bfee1c2d75fedba0ced.jpg",
+      "town": "06",
+      "tod": "midday",
+      "n_gt": 14,
+      "n_fn": 8,
+      "n_fp": 4,
+      "fn_detail": [
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0152
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "traffic_light",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0001
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0
+        },
+        {
+          "class": "Vehicle",
+          "conf": 1.0,
+          "area_rel": 0.0
+        }
+      ],
+      "fp_detail": [
+        {
+          "class": "Vehicle",
+          "conf": 0.657,
+          "area_rel": 0.0004,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.257
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.634,
+          "area_rel": 0.0003,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.346
+        },
+        {
+          "class": "Vehicle",
+          "conf": 0.573,
+          "area_rel": 0.0001,
+          "confused_with": "Vehicle",
+          "confused_iou": 0.314
+        },
+        {
+          "class": "Traffic_Signs",
+          "conf": 0.319,
+          "area_rel": 0.0001,
+          "confused_with": null,
+          "confused_iou": null
+        }
+      ],
+      "title": "FP x4 | town06 midday"
+    }
+  ]
+}

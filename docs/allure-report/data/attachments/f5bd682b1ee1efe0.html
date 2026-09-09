@@ -1,0 +1,31 @@
+<style>.tbl{border-collapse:collapse;font-family:"Segoe UI",Arial,"Microsoft YaHei",sans-serif;font-size:13px;margin:4px 0 14px 0}.tbl th{background:#eef2f7;border:1px solid #c9d4e0;padding:6px 12px;text-align:left;font-weight:600;white-space:nowrap}.tbl td{border:1px solid #d5dde6;padding:6px 12px;white-space:nowrap}.tbl td.warn{color:#b45309;font-weight:600}.tbl td.bad{color:#b91c1c;font-weight:600}.sec{font-weight:700;font-size:14px;margin:14px 0 4px 0;color:#1f2937}.note{color:#6b7280;font-size:12px;margin:2px 0 10px 0}li{margin:3px 0;font-size:13px}</style>
+<div class="sec">5.1 主要结论</div>
+<ol>
+<li><b>整体性能达标</b>: YOLO11m 在测试集 (641 张) 上 mAP@0.5 = <b>0.7732</b>,
+mAP@0.5:0.95 = <b>0.5156</b>, 精度 P = 0.8608, 召回 R = 0.6873。
+Vehicle 类表现突出 (mAP@0.5 0.9426 / F1 0.9112), 是实时集成的主力类别。</li>
+<li><b>瓶颈集中在小目标类</b>: traffic_light 是最大短板 (Recall 0.47, mAP@0.5 0.617),
+其次是 Traffic_Signs (Recall 0.65) 与 Pedestrian (Recall 0.74)。
+GT 尺度统计表明: 交通灯中位标注面积仅约 6x6 px (640 输入), 83.3% 的交通灯 GT 小于 14x14 px;
+交通标志中位约 8x8 px。远距离小目标是主要挑战。</li>
+<li><b>错误模式清晰</b>: 部署阈值 (conf=0.25) 下, 374/641 (58.3%) 的图片存在漏检或误检。
+漏检几乎全部为极小/远距离目标 (交通灯 956 框、车辆 154 框);
+误检以同类重复检测为主 (与 GT 部分重叠 IoU 0.1-0.5 的二次检测框),
+纯误检次之 (行人 40 框等), 误检框置信度集中在 0.25-0.55 区间。</li>
+<li><b>场景差异显著且方向出人意料</b>: 雨天/早晨 (morning) 分组反而最优
+(mAP@0.5 0.7867, 高于整体 +1.3pp); 晴天正午 (midday) 最差 (0.7248, -4.8pp),
+其中行人 Recall 骤降至 0.43, 推测为强阳光导致的阴影/高对比度使小目标更难分辨;
+夜间 (night) 居中 (0.7687) 但精确率最低 (0.8242), 弱光下误检增多,
+交通灯 mAP@0.5:0.95 降至 0.3246。</li>
+</ol>
+<div class="sec">5.2 改进建议</div>
+<ol>
+<li><b>提高训练分辨率</b>: 原图 1280x960, 建议 imgsz>=960 (理想 1280), 小目标面积放大 2.25-4 倍,
+预期对 traffic_light / Traffic_Signs / Pedestrian 改善显著。</li>
+<li><b>小目标专项增强</b>: 高分辨率微调 + 小目标 copy-paste 增强;
+可考虑带 P2 浅层检测头的变体或 SAHI 切片推理。</li>
+<li><b>标注质量复核</b>: 复核面积 &lt;0.0005 的极小 GT 框与同一目标的重复框 (直接影响指标可信度)。</li>
+<li><b>推理后处理</b>: 部署 conf 从 0.25 提升至 0.35-0.5 可大幅削减低置信度误检;
+可对 traffic_light 单独提高阈值; 收紧类内 NMS 以减少重复检测框。</li>
+<li><b>场景专项</b>: 补充正午强光/阴影数据与夜间负样本挖掘, 抑制夜间误检。</li>
+</ol>

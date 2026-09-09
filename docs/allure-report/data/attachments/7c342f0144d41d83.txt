@@ -1,7 +1,7 @@
 # 算法精度评测报告
 
 > 项目: YOLO-Based Real-Time Object Detection for Autonomous Driving in CARLA (Studienarbeit)
-> 模型: YOLO11m — checkpoint: `training/Version_5_exp/YOLO_11/v11_m/train/weights/best.pt`
+> 模型: YOLO11m — checkpoint: `simulation/checkpoints/Yolo11m/best.pt`
 > 数据集: Carla_Labeling v5 (Roboflow, MIT 许可), 测试集 641 张
 > 报告生成日期: 2026-09-09
 
@@ -70,10 +70,10 @@
 
 | 类别 | GT 框数 | 漏检框数 (率) | 误检框数 (占该类预测比例) | GT 中位面积 (640 输入) | GT 极小目标占比 (<~14px) |
 |---|---|---|---|---|---|
-| Pedestrian | 332 | 97 (29.2%) | 62 (6200.0%) | 0.0004 (约 12 x 12 px) | 60.8% |
-| Traffic_Signs | 230 | 86 (37.4%) | 17 (1700.0%) | 0.0001 (约 7 x 7 px) | 79.6% |
-| Vehicle | 1377 | 154 (11.2%) | 64 (6400.0%) | 0.0020 (约 28 x 28 px) | 30.4% |
-| traffic_light | 1762 | 956 (54.3%) | 94 (9400.0%) | 0.0001 (约 5 x 5 px) | 83.3% |
+| Pedestrian | 332 | 97 (29.2%) | 62 (3.3%) | 0.0004 (约 12 x 12 px) | 60.8% |
+| Traffic_Signs | 230 | 86 (37.4%) | 17 (1.5%) | 0.0001 (约 7 x 7 px) | 79.6% |
+| Vehicle | 1377 | 154 (11.2%) | 64 (2.0%) | 0.0020 (约 28 x 28 px) | 30.4% |
+| traffic_light | 1762 | 956 (54.3%) | 94 (2.6%) | 0.0001 (约 5 x 5 px) | 83.3% |
 
 > 说明: GT 框尺度是该数据集的关键特征 —— 交通灯/标志/行人的中位标注面积仅相当于
 > 640x640 输入下几个到十几个像素 (原图 1280x960 下约为其 2 倍)。
@@ -82,7 +82,7 @@
 
 ### 4.2 归一化混淆矩阵 (ultralytics val 输出, conf=0.001)
 
-![归一化混淆矩阵](figures/confusion_matrix_normalized.png)
+![归一化混淆矩阵](runs/test_full/confusion_matrix_normalized.png)
 
 要点: ① Vehicle 对角线值最高, 检测最稳定; ② traffic_light 向 background 的漏检块最大
 (与该类仅 0.47 的 Recall 一致); ③ traffic_light 与 Traffic_Signs 之间存在双向混淆

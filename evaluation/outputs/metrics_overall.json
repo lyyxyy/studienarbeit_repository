@@ -1,0 +1,48 @@
+{
+  "n_images": 641,
+  "mAP50": 0.7732,
+  "mAP50_95": 0.5156,
+  "precision": 0.8608,
+  "recall": 0.6873,
+  "f1": 0.7545,
+  "speed_ms_per_image": {
+    "preprocess": 0.9,
+    "inference": 350.6,
+    "loss": 0.0,
+    "postprocess": 0.3
+  },
+  "per_class": [
+    {
+      "class": "Pedestrian",
+      "precision": 0.7645,
+      "recall": 0.741,
+      "f1": 0.7525,
+      "map50": 0.7867,
+      "map50_95": 0.4747
+    },
+    {
+      "class": "Traffic_Signs",
+      "precision": 0.871,
+      "recall": 0.646,
+      "f1": 0.7419,
+      "map50": 0.7463,
+      "map50_95": 0.4411
+    },
+    {
+      "class": "Vehicle",
+      "precision": 0.9315,
+      "recall": 0.8918,
+      "f1": 0.9112,
+      "map50": 0.9426,
+      "map50_95": 0.7769
+    },
+    {
+      "class": "traffic_light",
+      "precision": 0.8763,
+      "recall": 0.4705,
+      "f1": 0.6123,
+      "map50": 0.6174,
+      "map50_95": 0.3699
+    }
+  ]
+}

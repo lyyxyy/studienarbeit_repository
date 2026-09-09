@@ -1,0 +1,29 @@
+# ---- 数据集 (Roboflow 下载, 可从 https://universe.roboflow.com/surajworkplace/carla_labeling/dataset/5 重新获取) ----
+training/Version_5_exp/Carla_Labeling-5/
+
+# ---- 模型权重 ----
+# 忽略所有训练权重, 仅保留 YOLO11m 最终模型
+**/weights/*.pt
+!training/Version_5_exp/YOLO_11/v11_m/train/weights/best.pt
+!training/Version_5_exp/YOLO_11/v11_m/train/weights/last.pt
+
+# ---- 训练/评测生成物 ----
+**/runs/
+evaluation/outputs/runs/
+evaluation/outputs/subsets/
+evaluation/outputs/data_abs.yaml
+evaluation/allure-results/
+evaluation/allure-report/
+
+# ---- Python ----
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# ---- 视频 ----
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.mkv
+
